@@ -76,7 +76,7 @@ They want to just start talking.
 was ending, but not where I wanted to go. [Your own words here: what
 was hard, what helped, why this matters to you.]*
 
-— Mirjam Freese, founder
+— founder
 
 ## Purpose, mission, vision
 - **Purpose:** Everyone deserves work that fits who they are, and help
