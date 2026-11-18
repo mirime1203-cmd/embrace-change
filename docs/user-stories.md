@@ -1,77 +1,77 @@
 # User Stories – Embrace
 
-**Von „Ich weiß es nicht“ zu deinem nächsten Schritt.**
+**From "I don't know" to your next step.**
 
-Diese User Stories beschreiben, was Menschen in beruflicher Veränderung mit Embrace tun wollen und warum. Wie die Funktionen technisch gebaut werden, steht hier bewusst nicht.
+These user stories describe what people going through a career change want to do with Embrace, and why. They intentionally leave out how the features are built technically.
 
-**Zielgruppe für den ersten Prototyp:** Erwachsene in beruflicher Veränderung, vor allem nach einem Jobverlust, aber auch Menschen, die ihren Weg freiwillig hinterfragen.
+**Target group for the first prototype:** adults in career change, especially after a job loss, but also people who question their path by choice.
 
-## Priorisierung
+## Prioritization
 
-| Priorität | Bedeutung |
-|-----------|-----------|
-| **Muss** | Gehört in den ersten Prototyp. Ohne diese Story funktioniert Embrace nicht. |
-| **Soll** | Wichtig für ein rundes Erlebnis, kommt direkt nach dem Kern. |
-| **Kann** | Wertvoll, aber erst sinnvoll, wenn der Kern funktioniert. |
-
----
-
-## Muss
-
-### 1. Einfach losreden
-**Als** Person, die gerade ihren Job verloren hat,
-**möchte ich** ohne Fragebogen und ohne festes Ziel einfach erzählen oder schreiben, was mich beschäftigt,
-**damit** ich sofort anfangen kann, auch wenn ich noch nicht weiß, was ich will.
-
-### 2. Das Dringendste zuerst
-**Als** Person nach einem Jobverlust
-**möchte ich** gemeinsam mit Embrace klären, was gerade am dringendsten ist (zum Beispiel Einkommen, Fristen oder meine Gefühle),
-**damit** ich mich nicht von allem gleichzeitig überfordert fühle.
-
-### 3. Gesagtes und Vermutetes unterscheiden
-**Als** Nutzerin
-**möchte ich** in jeder Zusammenfassung sehen, was ich selbst gesagt habe und was Embrace daraus vermutet, und beides korrigieren können,
-**damit** das Bild von mir wirklich stimmt und keine Annahme über mich unbemerkt stehen bleibt.
-
-### 4. Begründete Möglichkeiten entdecken
-**Als** Person in beruflicher Neuorientierung
-**möchte ich** konkrete berufliche Möglichkeiten sehen und jeweils erfahren, warum sie zu mir passen oder nicht,
-**damit** meine Optionen nicht abstrakt bleiben und ich sie selbst einschätzen kann.
-
-### 5. Einen kleinen ersten Schritt wählen
-**Als** Nutzerin
-**möchte ich** zu einer Möglichkeit einen kleinen, machbaren Versuch auswählen, zum Beispiel ein Gespräch, eine Recherche oder eine kleine Aufgabe,
-**damit** ich ins Handeln komme, ohne mich schon endgültig festlegen zu müssen.
+| Priority | Meaning |
+|----------|---------|
+| **Must** | Part of the first prototype. Embrace doesn't work without this story. |
+| **Should** | Important for a complete experience, comes right after the core. |
+| **Could** | Valuable, but only makes sense once the core works. |
 
 ---
 
-## Soll
+## Must
 
-### 6. Meine Kriterien sichtbar machen
-**Als** Person, die ihren Karriereweg hinterfragt,
-**möchte ich** meine Stärken, Werte und Bedürfnisse aus meinen Gesprächen an einem Ort gesammelt sehen,
-**damit** ich einen eigenen Maßstab für meine Entscheidungen habe.
+### 1. Just start talking
+**As a** person who has just lost my job,
+**I want** to simply say or write what's on my mind, without a questionnaire or a clear goal,
+**so that** I can start right away, even if I don't know yet what I want.
 
-### 7. Die Reise geht nicht verloren
-**Als** wiederkehrende Nutzerin
-**möchte ich**, dass Embrace sich an meine bisherigen Erkenntnisse, offenen Fragen und Entscheidungen erinnert,
-**damit** ich nicht jedes Mal von vorne anfangen muss.
+### 2. Most urgent things first
+**As a** person after a job loss,
+**I want** to work out with Embrace what is most urgent for me right now (for example income, deadlines or my feelings),
+**so that** I don't feel overwhelmed by everything at once.
 
-### 8. Ehrlicher Hinweis auf professionelle Hilfe
-**Als** Person in einer belastenden Situation
-**möchte ich**, dass Embrace offen sagt, wenn ich mehr Unterstützung brauche als eine KI bieten kann, und mir zeigt, wo ich Hilfe finde,
-**damit** ich nicht allein bleibe, wenn es ernst wird.
+### 3. Separate what I said from what is guessed
+**As a** user,
+**I want** every summary to show what I said myself and what Embrace infers from it, and to be able to correct both,
+**so that** the picture of me is accurate and no assumption about me goes unnoticed.
+
+### 4. Discover options with reasons
+**As a** person in career change,
+**I want** to see concrete career options and learn why each one fits me or doesn't,
+**so that** my options don't stay abstract and I can judge them myself.
+
+### 5. Choose a small first step
+**As a** user,
+**I want** to pick a small, doable experiment for an option, such as a conversation, some research or a small task,
+**so that** I start taking action without having to commit for good.
 
 ---
 
-## Kann
+## Should
 
-### 9. Erfahrungen auswerten
-**Als** Nutzerin
-**möchte ich** nach einem Schritt festhalten, was ich gelernt habe, und sehen, wie das meine Richtung verändert,
-**damit** auch ein verworfener Weg als wertvolle Erkenntnis zählt.
+### 6. Make my criteria visible
+**As a** person questioning my career path,
+**I want** to see my strengths, values and needs from my conversations collected in one place,
+**so that** I have my own yardstick for my decisions.
 
-### 10. Meine Daten gehören mir
-**Als** Nutzerin
-**möchte ich** meine gespeicherten Gespräche und Erkenntnisse einsehen, herunterladen und vollständig löschen können,
-**damit** ich die Kontrolle über meine eigene Geschichte behalte.
+### 7. My journey doesn't get lost
+**As a** returning user,
+**I want** Embrace to remember my previous insights, open questions and decisions,
+**so that** I don't have to start from scratch every time.
+
+### 8. Honest pointer to professional help
+**As a** person in a difficult situation,
+**I want** Embrace to say openly when I need more support than an AI can give, and show me where to find help,
+**so that** I'm not left alone when things get serious.
+
+---
+
+## Could
+
+### 9. Reflect on my experiences
+**As a** user,
+**I want** to write down what I learned after taking a step and see how it changes my direction,
+**so that** even a path I drop counts as a valuable insight.
+
+### 10. My data is mine
+**As a** user,
+**I want** to view, download and completely delete my saved conversations and insights,
+**so that** I stay in control of my own story.
