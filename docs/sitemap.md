@@ -1,64 +1,99 @@
 # Sitemap – Embrace
 
-Derived from [user-stories.md](user-stories.md). Each page lists the user stories it serves.
+Derived from [user-stories.md](user-stories.md) and [decisions.md](decisions.md). Each page lists the user stories it serves.
+
+**Structure in short:** public pages lead into a first journey. After that, everything lives in a main menu with four tabs and the light in the middle: **Heute · Kapitel · ● · Kompass · Entdecken**.
 
 ## Diagram
 
 ```mermaid
 flowchart TD
-    Home["Home<br/>(Landing page)"] --> SignIn["Sign in / Sign up"]
-    Home --> Talk["Talk"]
-    SignIn --> Journey["My journey"]
+    subgraph Public["Public pages"]
+        Home["Home"]
+        Why["Why Embrace"]
+        SignIn["Sign in / Sign up"]
+        Legal["Impressum · Privacy policy"]
+    end
 
-    Journey --> Talk
-    Journey --> Summary["What I understood"]
-    Journey --> Criteria["My criteria"]
-    Journey --> Options["Options"]
-    Journey --> Steps["My steps"]
+    subgraph First["First journey (one time, starts a chapter)"]
+        Changing["What's changing"]
+        Hearing["What I'm hearing"]
+        Imagine["Imagine"]
+        LightShadow["Light and Shadow"]
+        Step["Your first step"]
+    end
 
-    Talk --> Summary
-    Summary --> Criteria
-    Criteria --> Options
-    Options --> OptionDetail["Option detail"]
-    OptionDetail --> Steps
-    Steps --> Reflect["Reflect"]
-    Reflect --> Journey
+    subgraph App["Main menu"]
+        Today["Heute"]
+        Chapter["Kapitel"]
+        Light(("● The light"))
+        Kompass["Kompass"]
+        Discover["Entdecken"]
+    end
 
-    Talk -.-> Help["Help & support"]
-    Journey --> Settings["My data"]
+    Home --> Changing
+    Home --> Why
+    Home --> SignIn
+    Changing --> Hearing --> Imagine --> LightShadow --> Step
+    Step --> SignIn
+    SignIn --> Today
+
+    Today --- Chapter --- Light --- Kompass --- Discover
+
+    Today --> StepDetail["Step detail and reflection"]
+    Chapter --> PastChapters["Past chapters"]
+    Chapter --> NewChapter["New chapter"]
+    NewChapter --> Changing
+    Discover --> Rituals["Ideal day · Light and Shadow · Letter to yourself · Chapter review"]
+    Kompass --> Account["Account · My data"]
+
+    Light -.-> Help["Help and support"]
 ```
 
-## Pages
-
-### Must (first prototype)
+## Public pages
 
 | Page | Description | Stories |
 |------|-------------|---------|
 | **Home** | Explains in a few words what Embrace does and invites people to just start talking. | 1 |
-| **Talk** | An open conversation where people share what's on their mind and Embrace first clarifies what is most urgent. | 1, 2 |
-| **What I understood** | A summary that clearly separates what the person said from what Embrace infers, with every point open to correction. | 3 |
-| **Options** | A list of concrete career paths, each with a short explanation of why it fits or doesn't. | 4 |
-| **Option detail** | One option in depth, with its reasons and suggested small experiments to try it out. | 4, 5 |
-| **My steps** | The small first steps the person has chosen, such as a conversation, some research or a small task. | 5 |
+| **Why Embrace** | The founder's story, the values and the promise that the person's data is theirs. | 16 |
+| **Sign in / Sign up** | Saves the first journey so people can come back to it; offered after the first step, not before. | 7 |
+| **Impressum · Privacy policy** | The legally required pages for a website in Germany. | 16 |
 
-### Should
+## First journey (Must)
 
-| Page | Description | Stories |
-|------|-------------|---------|
-| **Sign in / Sign up** | Lets people come back to their journey without starting from scratch. | 7 |
-| **My journey** | The overview that brings together insights, open questions and decisions across all conversations. | 7 |
-| **My criteria** | Shows the strengths, values and needs collected from the conversations in one place. | 6 |
-| **Help & support** | Says openly when more support than an AI is needed and points to coaches, counselling and crisis services. | 8 |
-
-### Could
+This flow runs once at the start of each chapter. It follows the Light and Shadow method (see [decisions.md](decisions.md)).
 
 | Page | Description | Stories |
 |------|-------------|---------|
-| **Reflect** | A space to note what a step taught the person and how it changes their direction. | 9 |
-| **My data** | Lets people view, download and completely delete their saved conversations and insights. | 10 |
+| **What's changing** | An open conversation with the light that first sorts what is urgent (must) from what the person wants. | 1, 2 |
+| **What I'm hearing** | A short reflection in the person's own words that separates what they said from what Embrace guesses, with a "not quite" link to correct it. | 3 |
+| **Imagine** | The person describes a day when the change has gone well; this becomes the chapter's vision. | 4 |
+| **Light and Shadow** | The person names the inner obstacle in the way and makes their own if-then plan. | 5 |
+| **Your first step** | The person chooses one small, doable step to take right away. | 6 |
+
+## Main menu
+
+| Tab | Description | Stories |
+|-----|-------------|---------|
+| **Heute** | Shows the current step with its if-then plan, today's question and upcoming moments. | 6, 9, 14 |
+| **Kapitel** | The current chapter with its vision at the top, the must and want lanes, steps, insights and how the vision has changed. | 2, 7, 8 |
+| **● The light** | Opens a conversation from anywhere in the app. | 1 |
+| **Kompass** | Strengths, values, needs and energy givers across all chapters, each marked as assumed, tested or confirmed. | 3, 10 |
+| **Entdecken** | Guided exercises to use any time: ideal day, Light and Shadow, finding your own options, letter to yourself, chapter review. | 4, 5, 11, 15 |
+
+## Pages inside the tabs
+
+| Page | Reached from | Description | Stories |
+|------|--------------|-------------|---------|
+| **Step detail and reflection** | Heute | A single step with its if-then plan and a place to note what was learned. | 6, 9 |
+| **Past chapters** | Kapitel | All closed chapters with their vision, letter and key insights. | 13 |
+| **New chapter** | Kapitel | Closes the current chapter with a short review and starts the first journey again. | 13 |
+| **Account · My data** | Kompass | Lets people view, download and delete everything Embrace has saved. | 16 |
+| **Help and support** | Everywhere | Says openly when more support than an AI is needed and points to coaches, counselling and crisis services. | 12 |
 
 ## Notes
 
-- **Sign in / Sign up** is not a story of its own; it follows from story 7, because a journey can only be remembered if people can return to it.
-- **Help & support** is reachable from every page, shown here with a dotted line from *Talk*, where the need usually comes up.
-- The main path follows the journey from the README: talk → understand → criteria → options → small step → reflect.
+- **Sign in comes after the first step.** People should be able to start talking before creating an account.
+- **Help and support** is reachable from every screen; the diagram shows it with a dotted line from the light.
+- **Free or paid** is still open (see [decisions.md](decisions.md)). It will decide which tabs belong to Embrace Change (free tracker) and which to Embrace (paid companion).
+- The V4 prototype tabs map as follows: Today → Heute, Chapter → Kapitel, Rituals → Entdecken, Journal → part of Kapitel.
